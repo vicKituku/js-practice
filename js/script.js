@@ -168,40 +168,44 @@
 //     dice = Math.trunc(Math.random() * 6)+1
 // }
 
-const bills = [22,295,176,440,37,105,10,1100,86,52]
-const tips = []
-const totals = []
+// const bills = [22,295,176,440,37,105,10,1100,86,52]
+// const tips = []
+// const totals = []
 
 
 
 
-for (let i = 0; i < bills.length; i++){
-    const calTip = function(bills){
-        if(bills[i]> 50 && bills[i]<300){
-            tips.push(bills[i]*0.15)
-            totals.push(bills[i] + tips[i])
+// for (let i = 0; i < bills.length; i++){
+//     const calTip = function(bills){
+//         if(bills[i]> 50 && bills[i]<300){
+//             tips.push(bills[i]*0.15)
+//             totals.push(bills[i] + tips[i])
     
-        }else{
-            tips.push(bills[i]*0.2)
-            totals.push(bills[i] + tips[i])
-        }
-    }
+//         }else{
+//             tips.push(bills[i]*0.2)
+//             totals.push(bills[i] + tips[i])
+//         }
+//     }
     
-    calTip(bills)
+//     calTip(bills)
 
-}
+// }
 
-console.log(bills)
-console.log(tips)
-console.log(totals)
+// console.log(bills)
+// console.log(tips)
+// console.log(totals)
 
-const calcAverage = function(arr){
-    let sum = 0
-    for (let i = 0; i<arr.length; i++){
-        sum += arr[i]
-    }
-    return sum/arr.length
+// const calcAverage = function(arr){
+//     let sum = 0
+//     for (let i = 0; i<arr.length; i++){
+//         sum += arr[i]
+//     }
+//     return sum/arr.length
 
-}
+// }
 
-console.log(calcAverage(bills))
+// console.log(calcAverage(bills))
+
+setTimeout(()=>{
+    console.log('Hello world')
+},2)
