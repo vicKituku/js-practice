@@ -212,20 +212,20 @@
 
 // Async JS Traversy Crash Course //
 
-const posts = [
-    {title:'Post 1', body:'This is post one'},
-    {title:'Post 2', body:'This is post two'}
-]
+// const posts = [
+//     {title:'Post 1', body:'This is post one'},
+//     {title:'Post 2', body:'This is post two'}
+// ]
 
-function getPosts(){
-    setTimeout(()=>{
-        let output = '';
-        posts.forEach((post, index)=>{
-            output+=`<li>${post.title}</li>`
-        })
-    document.body.innerHTML = output;
-    },1000)
-}
+// function getPosts(){
+//     setTimeout(()=>{
+//         let output = '';
+//         posts.forEach((post, index)=>{
+//             output+=`<li>${post.title}</li>`
+//         })
+//     document.body.innerHTML = output;
+//     },1000)
+// }
 
 
 // function createPost(post){
@@ -243,33 +243,33 @@ function getPosts(){
 //     })
 // }
 
-function createPost(post){
-    return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            posts.push(post)
-            const error = false
-        if(!error){
-            resolve()
+// function createPost(post){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             posts.push(post)
+//             const error = false
+//         if(!error){
+//             resolve()
 
-        }else{
-            reject('Something went wrong')
-        }
-        },2000);
+//         }else{
+//             reject('Something went wrong')
+//         }
+//         },2000);
 
         
-    })
-}
+//     })
+// }
 
 // createPost({title:'Post 3', body:'This is post three'}).then(getPosts).catch(error=>console.log(error))
 
 
-async function init(){
-    await createPost({title:'Post 3', body:'This is post three'});
+// async function init(){
+//     await createPost({title:'Post 3', body:'This is post three'});
 
-    getPosts();
-}
+//     getPosts();
+// }
 
-init()
+// init()
 // const promise1 = Promise.resolve('Hello world')
 // const promise2 = 10
 // const promise3 = new Promise((resolve, reject)=>{
@@ -289,3 +289,18 @@ init()
 //         console.log('FAILED')
 //     }
 // }).then(data=>console.log(data))
+
+const names =['james', 'jess', 'lilly', 'sevy']
+
+names.forEach((name)=> console.log(name))
+
+
+const myForEach = (arr, cb)=>{
+    for (let i = 0;i<arr.length;i++){
+        const element = arr[i]
+        cb(element)
+    }
+}
+myForEach(names,(name)=>{
+    console.log(name)
+})
