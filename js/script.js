@@ -290,17 +290,22 @@
 //     }
 // }).then(data=>console.log(data))
 
-const names =['james', 'jess', 'lilly', 'sevy']
+// const names =['james', 'jess', 'lilly', 'sevy']
 
-names.forEach((name)=> console.log(name))
+// names.forEach((name)=> console.log(name))
 
 
-const myForEach = (arr, cb)=>{
-    for (let i = 0;i<arr.length;i++){
-        const element = arr[i]
-        cb(element)
-    }
-}
-myForEach(names,(name)=>{
-    console.log(name)
-})
+// const myForEach = (arr, cb)=>{
+//     for (let i = 0;i<arr.length;i++){
+//         const element = arr[i]
+//         cb(element)
+//     }
+// }
+// myForEach(names,(name)=>{
+//     console.log(name)
+// })
+
+// ARROW FUNCTIONS //
+let age = 18
+let description = age>=18? "you are ana adult" :"You are a kid"
+console.log(description)
