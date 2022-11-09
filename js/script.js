@@ -333,4 +333,25 @@
 //     console.log(name)
 // })
 
-ReactDOM.render(<h1>Hello world</h1>, document.getElementById("root"));
+const page = (
+  <nav>
+    <h1>Victor Kituku</h1>
+    <ul>
+      <li>Pricing</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+);
+
+// ReactDOM.render(<h1>Hello World</h1>, document.getElementById("root"));
+ReactDOM.render(page, document.getElementById("root"));
+
+// const h1 = document.createElement("h1");
+// const textNode = document.createTextNode("Hello React");
+// h1.appendChild(textNode);
+// h1.classList.add("header");
+// console.log(h1);
+
+// const mainroot = document.getElementById("root");
+// mainroot.append(h1);
