@@ -5,13 +5,13 @@
 // const yearsUntilRetirement = function (birthYear, firstName) {
 //     const age = calcAge(birthYear)
 //     const retirement = 65-age
-    
+
 //     if (retirement > 0 ){
 //         return `${firstName} retires in ${retirement} years`
 //     }else{
 //         return `${firstName} has already retired`
 //     }
-    
+
 // }
 
 // result = yearsUntilRetirement(1970, 'Victor')
@@ -24,16 +24,15 @@
 
 // const checkWinner = function(avgDolphins, avgKoalas){
 //     if (avgDolphins > avgKoalas*2 ){
-//         console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`) 
+//         console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`)
 //     }else if(avgKoalas > avgDolphins*2){
-//         console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`) 
+//         console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`)
 //     }else{
 //         console.log('No winner')
 //     }
 
 // }
 // checkWinner(avgDolphins,avgKoalas)
-
 
 // const friends = ['John', 'Michael', 'Peter']
 // friends[1] = 'Jay'
@@ -172,21 +171,18 @@
 // const tips = []
 // const totals = []
 
-
-
-
 // for (let i = 0; i < bills.length; i++){
 //     const calTip = function(bills){
 //         if(bills[i]> 50 && bills[i]<300){
 //             tips.push(bills[i]*0.15)
 //             totals.push(bills[i] + tips[i])
-    
+
 //         }else{
 //             tips.push(bills[i]*0.2)
 //             totals.push(bills[i] + tips[i])
 //         }
 //     }
-    
+
 //     calTip(bills)
 
 // }
@@ -227,7 +223,6 @@
 //     },1000)
 // }
 
-
 // function createPost(post){
 //     return new Promise((resolve, reject)=>{
 //         setTimeout(()=>{
@@ -256,12 +251,10 @@
 //         }
 //         },2000);
 
-        
 //     })
 // }
 
 // createPost({title:'Post 3', body:'This is post three'}).then(getPosts).catch(error=>console.log(error))
-
 
 // async function init(){
 //     await createPost({title:'Post 3', body:'This is post three'});
@@ -279,7 +272,6 @@
 
 // Promise.all([promise1, promise2, promise3, promise4]).then(values=>console.log(values))
 
-
 // Fetch API //
 // fetch('https://reqres.in/api/users').then(res=>{
 //     if (res.ok){
@@ -294,7 +286,6 @@
 
 // names.forEach((name)=> console.log(name))
 
-
 // const myForEach = (arr, cb)=>{
 //     for (let i = 0;i<arr.length;i++){
 //         const element = arr[i]
@@ -306,6 +297,40 @@
 // })
 
 // ARROW FUNCTIONS //
-let age = 18
-let description = age>=18? "you are ana adult" :"You are a kid"
-console.log(description)
+// let age = 1
+// let name = age>10 ? "pedro" : "victor"
+// console.log(name)
+// let description = age>=18? "you are an a adult" :"You are a kid"
+// console.log(description)
+
+// OBJECTS //
+// const person = {
+//     name:"Victor",
+//     age:"29",
+// }
+
+// const person2 = {...person, name:"jack"}
+
+// const{ name, age, } = person2
+
+// console.log(name, age, )
+
+// let names = ["pedro", 'jessica', 'carol', 'pedro', 'pedro']
+
+// const newNames = names.map(name=>{
+//     return name+"1"
+// })
+
+// newNames.forEach(name=>{
+//     console.log(name)
+// })
+
+// const withoutPedro = names.filter(name=>{
+//     return name !== 'pedro'
+// })
+
+// withoutPedro.forEach(name=>{
+//     console.log(name)
+// })
+
+ReactDOM.render(<h1>Hello world</h1>, document.getElementById("root"));
