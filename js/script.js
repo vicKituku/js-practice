@@ -333,19 +333,19 @@
 //     console.log(name)
 // })
 
-const page = (
-  <nav>
-    <h1>Victor Kituku</h1>
-    <ul>
-      <li>Pricing</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
-);
+// const page = (
+//   <nav>
+//     <h1>Victor Kituku</h1>
+//     <ul>
+//       <li>Pricing</li>
+//       <li>About</li>
+//       <li>Contact</li>
+//     </ul>
+//   </nav>
+// );
 
 // ReactDOM.render(<h1>Hello World</h1>, document.getElementById("root"));
-ReactDOM.render(page, document.getElementById("root"));
+// ReactDOM.render(page, document.getElementById("root"));
 
 // const h1 = document.createElement("h1");
 // const textNode = document.createTextNode("Hello React");
@@ -355,3 +355,65 @@ ReactDOM.render(page, document.getElementById("root"));
 
 // const mainroot = document.getElementById("root");
 // mainroot.append(h1);
+
+// const practicePage = (
+//   <div>
+//     <h2>Blog one</h2>
+//     <p>introduction to the blog post</p>
+//     <ul>
+//       <li>Point 1</li>
+//       <li>Point 2</li>
+//       <li>Point 3</li>
+//       <li>Point 4</li>
+//     </ul>
+//   </div>
+// );
+
+// console.log(practicePage);
+
+// document.getElementById("root").append(JSON.stringify(practicePage));
+
+// ReactDOM.render(practicePage, document.getElementById("root"));
+
+// function TempName() {
+//   return (
+//     <div>
+//       <img src="/images/react-logo.png" width="40px" />
+//       <h1>Fun facts about react</h1>
+//       <ul>
+//         <li>Was first released in 2013</li>
+//         <li>Was originally created by Jordan Walke</li>
+//         <li>Has well over 100kk stars on github</li>
+//         <li>Is maintained by facebook</li>
+//         <li>Powers thousands of apps</li>
+//         <li>Is composable</li>
+//       </ul>
+//     </div>
+//   );
+// }
+
+// ReactDOM.render(<TempName />, document.getElementById("root"));
+
+function ReasonsPage() {
+  return (
+    <div>
+      <header>
+        <nav>
+          <img src="/images/react-logo.png" width="60px" />
+        </nav>
+      </header>
+      <h1>Reasons why i'm learning react:</h1>
+      <ol>
+        <li>Get a job</li>
+        <li>Expand my network</li>
+        <li>Build useful tools</li>
+        <li>Improve My Thinking and coding skills</li>
+      </ol>
+      <footer>
+        <p>&copy; 2022 Kituku Development. All rights reserved</p>
+      </footer>
+    </div>
+  );
+}
+
+ReactDOM.render(<ReasonsPage />, document.getElementById("root"));
