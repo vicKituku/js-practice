@@ -394,14 +394,11 @@
 
 // ReactDOM.render(<TempName />, document.getElementById("root"));
 
-function ReasonsPage() {
+import Header from "Header.js";
+
+function Body() {
   return (
     <div>
-      <header>
-        <nav>
-          <img src="/images/react-logo.png" width="60px" />
-        </nav>
-      </header>
       <h1>Reasons why i'm learning react:</h1>
       <ol>
         <li>Get a job</li>
@@ -409,9 +406,24 @@ function ReasonsPage() {
         <li>Build useful tools</li>
         <li>Improve My Thinking and coding skills</li>
       </ol>
-      <footer>
-        <p>&copy; 2022 Kituku Development. All rights reserved</p>
-      </footer>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <p>&copy; 2022 Kituku Development. All rights reserved</p>
+    </footer>
+  );
+}
+
+function ReasonsPage() {
+  return (
+    <div>
+      <Header />
+      <Body />
+      <Footer />
     </div>
   );
 }
